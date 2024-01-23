@@ -42,7 +42,7 @@ int main()
 		}
 		for (int i = 0; i < (int)ReadSocketLiset.fd_count; i++)
 		{
-			if (FD_ISSET(ReadSocketLiset.fd_array[0], &CopyReadSocketLiset))
+			if (FD_ISSET(ReadSocketLiset.fd_array[i], &CopyReadSocketLiset))
 			{
 				if (ReadSocketLiset.fd_array[i] == ListenSocket)
 				{

@@ -15,9 +15,9 @@ int main()
 	struct sockaddr_in ServerSockAddr;
 	memset(&ServerSockAddr, 0, sizeof(ServerSockAddr));
 	ServerSockAddr.sin_family = AF_INET;
-	inet_pton(AF_INET, "192.168.3.118", &(ServerSockAddr.sin_addr.s_addr));
+	inet_pton(AF_INET, "127.0.0.1", &(ServerSockAddr.sin_addr.s_addr));
 	ServerSockAddr.sin_port = htons(10880);
-
+	//192.168.3.118
 	connect(ServerSocket, (struct sockaddr*)&ServerSockAddr, sizeof(ServerSockAddr));
 
 	while (true)

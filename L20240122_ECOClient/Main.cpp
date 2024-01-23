@@ -14,9 +14,9 @@ int main()
 		SOCKADDR_IN ServersocketAddr;
 		memset(&ServersocketAddr, 0, sizeof(ServersocketAddr));
 		ServersocketAddr.sin_family = AF_INET;
-		ServersocketAddr.sin_addr.s_addr = inet_addr("192.168.3.118");
+		ServersocketAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 		ServersocketAddr.sin_port = htons(10880);
-
+		//192.168.3.118
 		SOCKET ServerSocket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
 
 		connect(ServerSocket, (SOCKADDR*)&ServersocketAddr, sizeof(ServersocketAddr));
