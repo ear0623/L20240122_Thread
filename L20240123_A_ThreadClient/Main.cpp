@@ -137,7 +137,7 @@ unsigned WINAPI RecvThread(void* Arg)
 					memcpy(&DisconnectPlayer.X, &Data[4], 4);
 					memcpy(&DisconnectPlayer.Y, &Data[8], 4);
 
-					DisconnectPlayer.ID = ntohl(DisconnectPlayer.ID);
+					DisconnectPlayer.ID = ntohl(DisconnectPlayer.ID);//받아지는거
 					DisconnectPlayer.X = ntohl(DisconnectPlayer.X);
 					DisconnectPlayer.Y = ntohl(DisconnectPlayer.Y);
 
