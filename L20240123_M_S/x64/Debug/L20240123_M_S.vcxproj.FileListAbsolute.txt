@@ -1,1 +1,2 @@
 C:\Users\PC\source\repos\L20240123_M_S\x64\Debug\L20240123_M_S.exe
+C:\Users\PC\source\repos\Temp\L20240123_M_S\x64\Debug\L20240123_M_S.exe

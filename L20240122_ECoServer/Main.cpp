@@ -1,11 +1,16 @@
 #include <WinSock2.h>
 
+#include "Packet.h"
+
+using namespace std;
+
 #pragma comment(lib,"ws2_32")
 
 int main()
 {	
 	WSAData wsaData;
 	WSAStartup(MAKEWORD(2,2),&wsaData);
+
 
  	SOCKET ListenSocket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
 
